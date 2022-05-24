@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random number game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<style>
+    #mainDiv {
+        display: none;
+    }
+</style>
+
+<body>
+    <h1 class="w-100 text-center">Welcome to the Game</h1>
+    <h3 class="w-100 text-center">Please input your prearranged number between 0 and 9</h3>
+    <input type="number" class="form-control w-50" id="preNumber" placeholder="Please input your prearranged number between 0 and 9">
+    <br>
+    <button onclick="scream()" class="btn btn-danger">Start game</button>
+    <a id="restart" class="btn btn-success" role="button" onclick="restart3()">
+        Restart
+    </a>
+    <br>
+    <br>
+
+
+
+    <div class=" w-100" id="mainDiv">
+        <!-- first section -->
+        <div class="w-50 border border-danger">
+            <label for="name1">Please enter your name</label>
+            <input type="text" id="name1">
+            <button onclick="nameDisplay()" class="btn btn-success">click to add name</button>
+            <h4 id="nameOut">
+
+            </h4>
+
+            <!-- Display output -->
+            <div id="display1" style="height: 30vh; text-align: center; font-size: x-large; font-weight: 900;">
+
+            </div>
+            <button id="play1" class="btn btn-success" onclick="playBtn()">Play</button>
+        </div>
+
+
+
+        <!-- second section -->
+        <div class="w-50 border border-danger">
+            <label for="name1">Please enter your name</label>
+            <input type="text" id="name2">
+            <button onclick="nameDisplay2()" class="btn btn-info">click to add name</button>
+            <h4 id="nameOut2">
+
+            </h4>
+
+            <!-- Display output -->
+            <div id="display2" style="height: 30vh; text-align: center; font-size: x-large; font-weight: 900;">
+
+            </div>
+            <button id="play2" class="btn btn-info" onclick="playBtn2()">Play</button>
+        </div>
+    </div>
+
+    <br>
+    <!-- result div -->
+    <div id="results" class="w-100 border border-info" style="height: 10vh;">
+
+    </div>
+
+</body>
+
+
+<script src="../Random-no-game/randomnogame.js"></script>
+
+</html>
